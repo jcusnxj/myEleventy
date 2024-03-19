@@ -55,11 +55,11 @@ V `root` adresáři projektu Eleventy jsem založil následující adresářovou
      │     ├── img          // custom folder (addPassthroughCopy method needed in .eleventy.js)
      │     └── js           // custom folder (addPassthroughCopy method needed in .eleventy.js)
      ├── page               // custom folder for content
-     │     └── page.json    // default Front Matter Data
+     │     └── page.json    // default Front Matter Data for markdown files
      ├── note               // custom folder for content
-     │     └── note.json    // default Front Matter Data
+     │     └── note.json    // default Front Matter Data for markdown files
      ├── post               // custom folder for content
-     │     └── post.json    // default Front Matter Data
+     │     └── post.json    // default Front Matter Data for markdown files
      └── index.md           // landing page
 ```
 V root adresáři by měly zůstat pouze tyto soubory (vše ostatní je v adresáři `src`):

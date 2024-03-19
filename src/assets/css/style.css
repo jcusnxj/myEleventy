@@ -33,7 +33,7 @@ header {
 header a {       /* CSS Selector - selects all <a> elements where the parent is a <nav> element */
   display: block;     /* Displays an element as a block element. It starts on a new line, and takes up the whole width. */
   padding: 1rem 1rem; /* Shorthand fot padding-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all. Creates extra space within an element, while margin creates extra space around an element */
-  color: #f5f5f5a6;
+  color: #959da6;
   text-decoration: none;
   font-size: 1.8rem;
 }
@@ -54,7 +54,7 @@ vw - Relative to 1% of the width of the viewport = the browser window size.
 main {
   width: 80%; /* Sets the maximum width of an element. If the content is larger than the maximum width, it will automatically change the height of the element. Overrides the width property. */
   margin: 0 auto; /* Creates extra space around an element. Shorthand for margin-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all*/
-  min-height: 100vh; /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
+  min-height: calc(100vh - 9rem); /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
   max-width: 90rem; 
 }
 
@@ -81,4 +81,17 @@ img {
 a {
   color: #6A89FE;
   text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  display: flex; /* Displays an element as a block-level flex container */
+  justify-content: center; /* Aligns the flex items horizontally */
+  align-items: center; /* Aligns the flex items vertically */
+  height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
+  width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
+  background-color: #151322;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #959da6;
 }

@@ -7,6 +7,6 @@ eleventyNavigation:
     key: Domů
     order: 1
 ---
-# Můj Eleventy projekt
+# Můj Eleventy Projekt
 <br>
 {{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}

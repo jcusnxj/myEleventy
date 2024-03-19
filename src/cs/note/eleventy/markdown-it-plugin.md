@@ -30,8 +30,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLibrary);
 ```
 
-## 3. Použití
+## 2. Použití
 Viz oficiální dokumentace.
 
-## 4. Zdroje
+## 3. Zdroje
 - [Markdown-it dokumentace](https://github.com/markdown-it/markdown-it)

@@ -7,6 +7,6 @@ eleventyNavigation:
     key: Home
     order: 1
 ---
-# My Eleventy project
+# My Eleventy Project
 <br>
 {{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}
