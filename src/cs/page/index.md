@@ -8,3 +8,5 @@ eleventyNavigation:
     order: 1
 ---
 # Můj Eleventy projekt
+<br>
+{{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}

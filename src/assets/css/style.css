@@ -45,3 +45,40 @@ header a:hover {     /* CSS Selector - selects <a> elements where the parent is 
 header a:nth-child(3) {    /* Apply to the fourth item */
   margin-left: auto;            /* automatically allocates all available space on its left side, effectively pushing it and any subsequent elements to the end of the flex container */
 }
+
+/* Note on some units
+vh - Relative to 1% of the height of the viewport = the browser window size.
+vw - Relative to 1% of the width of the viewport = the browser window size.
+*/
+
+main {
+  width: 80%; /* Sets the maximum width of an element. If the content is larger than the maximum width, it will automatically change the height of the element. Overrides the width property. */
+  margin: 0 auto; /* Creates extra space around an element. Shorthand for margin-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all*/
+  min-height: 100vh; /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
+  max-width: 90rem; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #959da6;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ul {
+  padding-left: 3rem;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
+a {
+  color: #6A89FE;
+  text-decoration: none;
+}
