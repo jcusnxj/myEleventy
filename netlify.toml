@@ -1,0 +1,12 @@
+# Redirect for end-user’s browser preference override
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  conditions = {Language = ["en"]}
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/cs/:splat"
+  status = 302

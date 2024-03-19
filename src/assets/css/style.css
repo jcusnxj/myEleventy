@@ -1,0 +1,47 @@
+*,     /* CSS Selector - Selects all elements */
+*::before,  /* CSS Selector - Insert something after the content of each element */
+*::after {  /* CSS Selector - Insert something before the content of each element */
+  box-sizing: border-box; /* Defines how the width and height of an element are calculated. The width and height properties (and min/max properties) includes content, padding and border. */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Specifies whether to smoothly animate the scroll position, instead of a straight jump, when the user clicks on a link within a scrollable box. */
+  font-size: 62.5%; /* Sets the root font size to 10px = 1rem */
+}
+
+body {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-family: "Iowan Old Style", Garamond, Georgia, serif;
+  background-color: #151322;
+  color: whitesmoke;
+}
+
+/* HEADER */
+header {
+  display: flex; /* Displays an element as a block-level flex container */
+  justify-content: flex-start; /* Aligns the flex items horizontally */
+  align-items: center; /* Aligns the flex items vertically */
+  height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
+  width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+header a {       /* CSS Selector - selects all <a> elements where the parent is a <nav> element */
+  display: block;     /* Displays an element as a block element. It starts on a new line, and takes up the whole width. */
+  padding: 1rem 1rem; /* Shorthand fot padding-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all. Creates extra space within an element, while margin creates extra space around an element */
+  color: #f5f5f5a6;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+header a:hover {     /* CSS Selector - selects <a> elements where the parent is a <nav> element on mpouse hoover */
+  color: #FDFDFE;
+}
+
+header a:nth-child(3) {    /* Apply to the fourth item */
+  margin-left: auto;            /* automatically allocates all available space on its left side, effectively pushing it and any subsequent elements to the end of the flex container */
+}
