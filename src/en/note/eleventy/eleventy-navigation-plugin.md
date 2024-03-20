@@ -1,11 +1,11 @@
 ---
-title: Eleventy Navigation plugin
+title: Eleventy Navigation Plugin
 translationKey: "eleventyNavigationPlugin"
 templateEngineOverride: md
 eleventyNavigation:
-  key: Eleventy Navigation plugin
+  key: Eleventy Navigation Plugin
   parent: Eleventy
-  order: 5
+  order: 2
 ---
 ## 1. Installation & configuration
 

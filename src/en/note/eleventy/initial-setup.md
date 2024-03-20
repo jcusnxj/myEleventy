@@ -1,5 +1,5 @@
 ---
-title: Eleventy
+title: Initial Setup
 translationKey: "initialSetUp"
 eleventyNavigation:
   key: Initial Setup
@@ -7,10 +7,10 @@ eleventyNavigation:
   order: 1
 ---
 ## 1. Installation
-I followed the steps on [11ty Recipes](https://11ty.recipes/recipes/start-an-eleventy-site-from-scratch/) website.
+See instructions on [11ty Recipes](https://11ty.recipes/recipes/start-an-eleventy-site-from-scratch/) website.
 
 ## 2. Github repository 
-I followed the steps on [11ty Recipes](https://11ty.recipes/recipes/create-a-github-repository-for-your-eleventy-site/) website again. 
+See instructions on [11ty Recipes](https://11ty.recipes/recipes/create-a-github-repository-for-your-eleventy-site/) website again. 
 
 ## 3. .gitignore
 In step 3 above, a `.gitignore` file was created. I also added the `.DS_Store` file to it:

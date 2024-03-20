@@ -37,7 +37,7 @@ V adresáři `partials` jsem založil soubor `_navigation.njk`:
 ```
 
 ## 3. Lokalizace
-Pokud máme vícejazyčný web, je nutné pracovat s lokalizovanými kolekcemi (viz bod 6, [Eleventy i18n plugin](/cs/note/eleventy/eleventy-i18n-plugin)). Partials `_navigation.njk` by pak vypadal takto:
+Pokud máme vícejazyčný web, je nutné pracovat s lokalizovanými kolekcemi (viz [Eleventy i18n plugin](/cs/note/eleventy/eleventy-i18n-plugin), bod 6). Partials `_navigation.njk` by pak vypadal takto:
 ```html
 <header>
     {% set pages = collections["page_" + lang ] %}     <!-- localised collection -->
@@ -47,7 +47,7 @@ Pokud máme vícejazyčný web, je nutné pracovat s lokalizovanými kolekcemi (
 </header>
 ```
 
-Lokalizované kolekce lze použít i dohromady s pluginem [Eleventy Navigation](/cs/note/eleventy/eleventy-navigation-plugin/) s jehož pomocí lze ovlinit pořadí ve kterém je obsah kolekce vrácen (atribut `order` - bod 2, [Eleventy Navigation](/cs/note/eleventy/eleventy-navigation-plugin/)). Soubor `_navigation.njk` pak bude vypadat takto:  
+Lokalizované kolekce lze použít i dohromady s pluginem [Eleventy Navigation](/cs/note/eleventy/eleventy-navigation-plugin/) (bod 2, atribut `order`) s jehož pomocí lze ovlinit pořadí ve kterém je obsah kolekce vrácen. Soubor `_navigation.njk` pak bude vypadat takto:  
 
 ```html
 <header>

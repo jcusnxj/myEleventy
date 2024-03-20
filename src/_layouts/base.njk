@@ -11,6 +11,8 @@
   <body>
     {% include "partials/_header.njk" %}
     <main>
+      <h1>{{ title }}</h1>
+      <hr>
       {{ content | safe }}    
     </main>
     {% include "partials/_footer.njk" %}

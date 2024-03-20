@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: RSS plugin
   parent: Eleventy
-  order: 8
+  order: 15
 ---
 ## 1. Installation & configuration
 Installation

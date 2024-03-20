@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Blog příspěvek - layout
   parent: Eleventy
-  order: 6
+  order: 14
 ---
 ## 1. Blog layout
 V adresáři `_layouts` jsem založil soubor `blog.njk`:

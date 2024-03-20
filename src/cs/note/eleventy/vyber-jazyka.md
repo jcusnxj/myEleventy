@@ -5,10 +5,10 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Výběr jazyka
   parent: Eleventy
-  order: 4
+  order: 5
 ---
 ## 1. Předpoklady
-Existence `json` souboru, který definuje parametr `lang`. Viz bod 3, [Eleventy i18n plugin](/cs/note/eleventy/eleventy-i18n-plugin).
+Existence `json` souboru, který definuje parametr `lang` (viz [Eleventy i18n Plugin](/cs/note/eleventy/eleventy-i18n-plugin), bod 3).
 
 ## 2. Globální data
 V adresáři `_data` jsem založil soubor `.site.js`:

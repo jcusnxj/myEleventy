@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Eleventy i18n plugin
   parent: Eleventy
-  order: 2
+  order: 4
 ---
 ## 1. Instalace & konfigurace
 Plugin je od v2.0.0. součástí Eleventy a neinstaluje se. 
@@ -32,7 +32,7 @@ Pro každý použitý jazyk musí v `root` adresáři existovat samostatný adre
     │    └── components      
     ├── _layouts              
     ├── assets                
-    │    c css             
+    │    ├── css             
     │    ├── img             
     │    └── js              
     ├── en                 // directory for EN content
@@ -110,7 +110,7 @@ module.exports = function (eleventyConfig) {
   });
 };
 ```
-Lokalizované kolekce jsem pak použil například v bodě 2, [Horizontální navigace](/cs/note/eleventy/navigace) nebo v bodě 5, [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout).
+Lokalizované kolekce jsem použil například v [Horizontální navigaci](/cs/note/eleventy/horizontalni-navigace) (bod 3) nebo v [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout) (bod 5).
 
 ## 7. Slovník
 Pro lokalizaci partials jsem vytvořil soubor `languages.js` v adresáři `_data`:
@@ -127,7 +127,7 @@ module.exports = {
   }
 };
 ```
-Soubor obsahuje překlad textu pro každý jazyk. Příklad lokalizace partials je v bodě 5, [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout). 
+Soubor obsahuje překlad textu pro každý jazyk. Příklad lokalizace partials je v [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout) (bod 5). 
 
 ## 8. Zdroje
 - [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/i18n/)

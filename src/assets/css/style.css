@@ -60,7 +60,6 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   padding-top: 1rem;
-  padding-bottom: 1rem;
   color: #959da6;
 }
 
@@ -70,7 +69,8 @@ p {
 }
 
 ul {
-  padding-left: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 img {

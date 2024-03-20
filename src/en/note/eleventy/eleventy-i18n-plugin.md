@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Eleventy i18n plugin
   parent: Eleventy
-  order: 2
+  order: 4
 ---
 ## 1. Installation & configuration
 Plugin is bundled with Eleventy and does not require separate installation. 
@@ -32,7 +32,7 @@ For each language used, there must be a separate directory in the `input` direct
     │    └── components      
     ├── _layouts              
     ├── assets                
-    │    c css             
+    │    ├── css             
     │    ├── img             
     │    └── js              
     ├── en                 // directory for EN content
@@ -109,7 +109,7 @@ module.exports = function (eleventyConfig) {
   });
 };
 ```
-I then used the localized collections, for example, in step 3, [Horizontal navigation](/en/note/eleventy/horizontal-navigation) or in step 5, [Blog Post Layout](/en/note/eleventy/blog-post-layout).
+I then used the localized collections, for example, in [Horizontal navigation](/en/note/eleventy/horizontal-navigation) (step 3) or in [Blog Post Layout](/en/note/eleventy/blog-post-layout) (step 5).
 
 ## 7. Dictionary
 For localizing partials, I created a `languages.js` file in the `_data` directory:
@@ -126,7 +126,7 @@ module.exports = {
   }
 };
 ```
-The file contains text translations for each language. An example of localizing partials is in step 5, [Blog Post Layout](/en/note/eleventy/blog-post-layout). 
+The file contains text translations for each language. An example of localizing partials is in [Blog Post Layout](/en/note/eleventy/blog-post-layout) (step 5). 
 
 ## 8. Sources
 - [Official documentation](https://www.11ty.dev/docs/plugins/i18n/)

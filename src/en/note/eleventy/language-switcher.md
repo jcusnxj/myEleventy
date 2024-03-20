@@ -5,10 +5,10 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Language switcher
   parent: Eleventy
-  order: 4
+  order: 5
 ---
 ## 1. Assumptions
-The existence of a `json` file that defines the `lang` parameter. See step 3, [Eleventy i18n plugin](/en/note/eleventy/eleventy-i18n-plugin).
+The existence of a `json` file that defines the `lang` parameter (see [Eleventy i18n plugin](/en/note/eleventy/eleventy-i18n-plugin), step 3).
 
 ## 2. Global data
 In the `_data` directory, I created a file named `site.js`:

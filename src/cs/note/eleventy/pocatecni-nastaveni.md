@@ -1,5 +1,5 @@
 ---
-title: Eleventy
+title: Počáteční nastavení
 translationKey: "initialSetUp"
 eleventyNavigation:
   key: Počáteční nastavení
@@ -7,10 +7,10 @@ eleventyNavigation:
   order: 1
 ---
 ## 1. Instalace
-Postupoval jsem podle postupu na webu [11ty Recipes](https://11ty.recipes/recipes/start-an-eleventy-site-from-scratch/).
+Viz postup na webu [11ty Recipes](https://11ty.recipes/recipes/start-an-eleventy-site-from-scratch/).
 
 ## 2. Github repository 
-Postupoval jsem opět podle postupu na webu [11ty Recipes](https://11ty.recipes/recipes/create-a-github-repository-for-your-eleventy-site/).
+Viz postupu na webu [11ty Recipes](https://11ty.recipes/recipes/create-a-github-repository-for-your-eleventy-site/).
 
 ## 3. .gitignore
 V bodě 3 výše vznikl soubor `.gitignore`. Ještě jsem do něho přidal soubor `.DS_Store`:

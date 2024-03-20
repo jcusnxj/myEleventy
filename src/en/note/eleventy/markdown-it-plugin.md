@@ -5,7 +5,7 @@ translationKey: "markdownIt"
 eleventyNavigation:
   key: Markdown-it Plugin
   parent: Eleventy
-  order: 2
+  order: 6
 ---
 ## 1. Installation & Configuration
 Installation 

@@ -5,7 +5,7 @@ translationKey: "photoSwipe"
 eleventyNavigation:
   key: PhotoSwipe
   parent: Eleventy
-  order: 2
+  order: 13
 ---
 ## 1. Installation
 ```hmtl

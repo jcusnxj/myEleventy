@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Syntax Highlighting Plugin
   parent: Eleventy
-  order: 3
+  order: 7
 ---
 ## 1. Installation & configuration
 Installation
@@ -43,7 +43,7 @@ See official documentation.
 
 ## 4. templateoverride
 
-If we don't want the sample Nunjucks code to execute, one option is to set `templateoverride` to `md` in the Front Matter Data of a specific file (by default, it is set to `njk` - see step 6, [Initial Set-up](/en/note/eleventy/initial-set-up)):
+If we don't want the sample Nunjucks code to execute, one option is to set `templateoverride` to `md` in the Front Matter Data of a specific file (by default, it is set to `njk` - see [Initial Setup](/en/note/eleventy/initial-set-up), step 4):
 ```yaml
 ---
 templateoverride: md

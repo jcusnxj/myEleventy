@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Syntax Highlighting Plugin
   parent: Eleventy
-  order: 3
+  order: 7
 ---
 ## 1. Instalace & konfigurace
 Instalace
@@ -44,7 +44,7 @@ Viz oficiální dokumentace.
 
 ## 4. templateoverride
 
-Pokud nechceme, aby se ukázkový nunjuck kód vykonal, jedna z možností je nastavit v Front Matter Data konkrétního souboru `templateoverride` na `md` (defaultně je nastavený na `njk` - viz bod 6, [Počáteční nastavení](/cs/note/eleventy/pocatecni-nastaveni/)):
+Pokud nechceme, aby se ukázkový nunjuck kód vykonal, jedna z možností je nastavit v Front Matter Data konkrétního souboru `templateoverride` na `md` (defaultně je nastavený na `njk` - viz [Počáteční nastavení](/cs/note/eleventy/pocatecni-nastaveni/), bod 4):
 
 ```yaml
 ---
