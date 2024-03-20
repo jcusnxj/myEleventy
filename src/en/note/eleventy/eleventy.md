@@ -1,7 +1,8 @@
 ---
 title: Eleventy
+permalink: false
 translationKey: "eleventy"
 eleventyNavigation:
   key: Eleventy
-  order: 1
+  order: 3
 ---

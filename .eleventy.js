@@ -17,11 +17,11 @@ module.exports = function(eleventyConfig){
     //Collections
     // collection of pages in english
     eleventyConfig.addCollection("page_en", function (collection) {
-      return collection.getFilteredByGlob("src/en/page/*.md");
+      return collection.getFilteredByGlob("src/en/page/**/*.md");
     });
     // collection of pages in czech
     eleventyConfig.addCollection("page_cs", function (collection) {
-      return collection.getFilteredByGlob("src/cs/page/*.md");
+      return collection.getFilteredByGlob("src/cs/page/**/*.md");
     });
     // collection of notes in english
     eleventyConfig.addCollection("note_en", function (collection) {
@@ -38,6 +38,14 @@ module.exports = function(eleventyConfig){
     // collection of posts in czech
     eleventyConfig.addCollection("post_cs", function (collection) {
       return collection.getFilteredByGlob("src/cs/post/**/*.md");
+    });
+    // collection of all content in english
+    eleventyConfig.addCollection("all_en", function (collection) {
+      return collection.getFilteredByGlob("src/en/**/*.md");
+    });
+    // collection of all comtent in czech
+    eleventyConfig.addCollection("all_cs", function (collection) {
+      return collection.getFilteredByGlob("src/cs/**/*.md");
     });
 
 

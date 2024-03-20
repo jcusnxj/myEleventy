@@ -1,11 +1,6 @@
-<header>
 
-    {% set navPages = collections["page_" + lang ] | eleventyNavigation %}
-    {%- for item in navPages -%}
-        <a href="{{ item.url }}">{{ item.title }}</a>
-    {%- endfor -%}
-
-    {# loop though site.languages #}
+<ul class="nav-list" role="list">
+{# loop though site.languages #}
     {% for lgg in site.languages %}
 
     {# set translatedUrl to the homepage of that language by default #}
@@ -22,7 +17,7 @@
         {% endif %}
         
     {% endfor %}
-    <a href="{{ translatedUrl }}">{{ lgg.label }}</a>
+    
+    <li><a href="{{ translatedUrl }}">{{ lgg.name }}</a></li>
     {% endfor %}
-
-</header>
+</ul>

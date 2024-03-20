@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Table of Content
   parent: Eleventy
-  order: 9
+  order: 16
 ---
 ## 1. Markdown-it & Markdown-it-anchor plugin
 Markdown-it-anchor automatically creates heading anchor links (i.e., it inserts IDs into headings):

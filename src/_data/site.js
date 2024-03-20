@@ -8,10 +8,12 @@ module.exports = {
       {
         label: "EN",
         code: "en",
+        name: "English",
       },
       {
         label: "CZ",
         code: "cs",
+        name: "Čeština",
       },
     ],
   };

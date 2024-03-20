@@ -5,7 +5,7 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Blog Post Layout
   parent: Eleventy
-  order: 14
+  order: 8
 ---
 ## 1. Blog layout
 In the `_layouts` directory, I created a file named `blog.njk`:

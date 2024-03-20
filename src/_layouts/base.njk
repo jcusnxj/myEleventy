@@ -9,12 +9,22 @@
     <title>{{ title }}</title> 
   </head>
   <body>
-    {% include "partials/_header.njk" %}
-    <main>
-      <h1>{{ title }}</h1>
-      <hr>
-      {{ content | safe }}    
-    </main>
-    {% include "partials/_footer.njk" %}
+     <div class="container">
+        <div class="sidebar">
+          {% include "partials/_sidebar.njk" %}
+          <br>
+          {% include "partials/_language.njk" %}
+        </div>
+        <div class="content">
+          <main>
+            <h1>{{ title }}</h1>
+            <hr>
+            {% block content %}
+            {{ content | safe }} 
+            {% endblock %}     
+          </main>
+        </div>
+     </div>
+          {% include "partials/_footer.njk" %}
   </body>
 </html>
