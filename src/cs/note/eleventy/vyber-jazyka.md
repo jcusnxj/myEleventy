@@ -5,13 +5,13 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Výběr jazyka
   parent: Eleventy
-  order: 5
+  order: 4
 ---
 ## 1. Předpoklady
-Existence `json` souboru, který definuje parametr `lang` (viz [Eleventy i18n Plugin](/cs/note/eleventy/eleventy-i18n-plugin), bod 3).
+Existence `json` souboru, který definuje parametr `lang` (viz [Eleventy i18n](/cs/note/eleventy/eleventy-i18n), bod 4).
 
 ## 2. Globální data
-V adresáři `_data` jsem založil soubor `.site.js`:
+Založení souboru `/src/_data/site.js`:
 
 ```js
 module.exports = {
@@ -34,8 +34,6 @@ module.exports = {
 ```
 
 ## 3. translationKey
-V Front Matter Data (každého souboru s obsahem) jsem vytvořil atribut `translationKey`. Hodnota atributu musí být stejná pro všechny jazykové mutace konkrétního souboru:
-
 Anglická verze stránky "About" (`/src/en/pages/about.md`): 
 ```yaml
 ---
@@ -50,9 +48,7 @@ translationKey: "aboutPage"
 ---
 ```
 
-## 4. Partials
-Přepínač mezi jazyky měl být součástí horizontální navigace. Přidal jsem tedy do souboru `_navigation.njk` následující:
-
+## 4. Výběr jazyka
 ```html
 {# loop though site.languages #}
 {% for lgg in site.languages %}

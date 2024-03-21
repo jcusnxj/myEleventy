@@ -4,5 +4,5 @@ permalink: false
 translationKey: "eleventy"
 eleventyNavigation:
   key: Eleventy
-  order: 3
+  order: 10
 ---

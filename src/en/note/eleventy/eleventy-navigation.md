@@ -35,8 +35,14 @@ permalink: false                      # to prevent a file creation in Eleventy o
 ```
 
 ## 4. Usage
+Display of navigation for collection (only within "Solar system"):
 ```html
 {{ collections.all | eleventyNavigation("Solar system") | eleventyNavigationToHtml | safe }}
+```
+
+Display of navigation for localized collection (see [Eleventy i18n](/en/note/eleventy/eleventy-navigace), step 4 and 7):
+```html
+{{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}
 ```
 
 ## 5. Sources

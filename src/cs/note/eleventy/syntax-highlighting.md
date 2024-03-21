@@ -1,18 +1,17 @@
 ---
-title: Syntax Highlighting Plugin
+title: Syntax Highlighting
 translationKey: "syntaxHighlightingPlugin"
 templateEngineOverride: md
 eleventyNavigation:
-  key: Syntax Highlighting Plugin
+  key: Syntax Highlighting
   parent: Eleventy
   order: 7
 ---
-## 1. Instalace & konfigurace
-Instalace
+## 1. Instalace
 ```html
 npm install @11ty/eleventy-plugin-syntaxhighlight --save-dev
 ```
-Konfigurace (`.eleventy.js`)
+## 2. Konfigurace 
 ```js
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -21,8 +20,8 @@ module.exports = function(eleventyConfig) {
 };
 ```
 
-## 2. CSS stylesheet 
-CSS soubor se styly (lze si vybrat například [zde](https://github.com/PrismJS/prism-themes)) uložíme do Eleventy projektu a okážeme ho v základním layoutu `base.njk`:
+## 3. CSS stylesheet 
+Odkázání CSS souboru se styly (lze si vybrat například [zde](https://github.com/PrismJS/prism-themes)) v základním layoutu `/src/_layouts/base.njk`:
 
 ```html
 <!DOCTYPE html>
@@ -38,21 +37,18 @@ CSS soubor se styly (lze si vybrat například [zde](https://github.com/PrismJS/
 </html>
 ```
 
-## 3. Použití
+## 4. Použití
 
 Viz oficiální dokumentace.
 
-## 4. templateoverride
-
-Pokud nechceme, aby se ukázkový nunjuck kód vykonal, jedna z možností je nastavit v Front Matter Data konkrétního souboru `templateoverride` na `md` (defaultně je nastavený na `njk` - viz [Počáteční nastavení](/cs/note/eleventy/pocatecni-nastaveni/), bod 4):
-
+## 5. templateoverride
 ```yaml
 ---
 templateoverride: md
 ---
 ```
 
-## 5. Zdroje
+## 6. Zdroje
 - [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
 
 

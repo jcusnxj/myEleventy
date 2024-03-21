@@ -81,12 +81,14 @@ footer {
   display: flex;
   flex-direction: row;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .sidebar {
   min-width: 250px;
   background-color: #151322;
   padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .content {
@@ -96,6 +98,34 @@ footer {
   padding-right: 4rem;
 }
 
+/* two column layout used for some notes with images */
+.double {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left {
+ flex: 50%;
+ align-self: center;
+ text-align: center;
+ padding: 3rem;
+ 
+}
+
+.right {
+ flex: 50%;
+}
+
+.right strong {
+  color: #7b7a7a;
+} 
+
+.left strong {
+  color: #7b7a7a;
+} 
+
+/* responsive layout */
 @media (max-width: 800px) {
   .container {
       flex-direction: column-reverse;
@@ -103,6 +133,9 @@ footer {
   main {
     min-width: 100%;
     padding-left: 2rem;
+  }
+  .double {
+    flex-direction: column;
   }
 }
 
@@ -148,6 +181,6 @@ footer {
 }
 
 .nav-list details > [role="list"] {
-  padding-inline-start: 0.75rem;            /* adding some padding to indent the text for lists inside of a details element */
+  padding-inline-start: 1.3rem;            /* adding some padding to indent the text for lists inside of a details element */
 }
 

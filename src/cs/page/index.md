@@ -7,4 +7,3 @@ eleventyNavigation:
     key: Domů
     order: 1
 ---
-{{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}

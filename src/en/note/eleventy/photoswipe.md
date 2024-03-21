@@ -12,12 +12,13 @@ eleventyNavigation:
 npm install photoswipe
 ```
 ## 2. PhotoSwipe CSS a JS files
-The following files need to be copied from `node_modules/photoswipe/dist` to the Eleventy project:
+The following files need to be copied from `node_modules/photoswipe/dist` to the Eleventy project `/src/assests/js/`:
 - photoswipe.css
 - photoswipe.esm.js
 - photoswipe-lightbox.esm.js
 
 ## 3. Create index.js with initialization
+Creation of file `/src/assets/js/index.js`:
 ```js
 import PhotoSwipeLightbox from '/assets/js/photoswipe-lightbox.esm.js'; // adjust path to your own
 const lightbox = new PhotoSwipeLightbox({
@@ -29,7 +30,7 @@ lightbox.init();
 ```
 
 ## 4. Basic layout
-Adjust basic layout `base.njk`:
+Adjust basic layout `/src/_layouts/base.njk`:
 ```html
 <!DOCTYPE html>
 <html lang="cs">

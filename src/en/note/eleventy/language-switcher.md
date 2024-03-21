@@ -5,13 +5,13 @@ templateEngineOverride: md
 eleventyNavigation:
   key: Language switcher
   parent: Eleventy
-  order: 5
+  order: 4
 ---
 ## 1. Assumptions
-The existence of a `json` file that defines the `lang` parameter (see [Eleventy i18n plugin](/en/note/eleventy/eleventy-i18n-plugin), step 3).
+The existence of a `json` file that defines the `lang` parameter (see [Eleventy i18n](/en/note/eleventy/eleventy-i18n), step 4).
 
 ## 2. Global data
-In the `_data` directory, I created a file named `site.js`:
+Creation of file `/src/_data/site.js`:
 ```js
 module.exports = {
   title: "jcusnxj",                
@@ -33,8 +33,6 @@ module.exports = {
 ```
 
 ## 3. translationKey
-In the Front Matter Data (of each content file), I created an attribute `translationKey`. The value of the attribute must be the same for all language versions of a specific content file:
-
 English version of "About" page: (`/src/en/pages/about.md`): 
 ```yaml
 ---
@@ -49,9 +47,7 @@ translationKey: "aboutPage"
 ---
 ```
 
-## 4. Partials
-The language switcher was supposed to be part of the horizontal navigation. Therefore, I added the following to the `_navigation.njk` file:
-
+## 4. Language Switcher
 ```html
 {# loop though site.languages #}
 {% for lgg in site.languages %}

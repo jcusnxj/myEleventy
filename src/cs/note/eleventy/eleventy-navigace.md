@@ -36,9 +36,14 @@ permalink: false                      # to prevent a file creation in Eleventy o
 ```
 
 ## 4. Použití
+Zobrazení navigace v kolekci (pouze v rámci "Solar system"):
 ```html
 {{ collections.all | eleventyNavigation("Solar system") | eleventyNavigationToHtml | safe }}
 ```
 
+Zobrazení navigace z lokalizované kolekce (viz [Eleventy i18n](/cs/note/eleventy/eleventy-navigace), bod 4 a 7):
+```html
+{{ collections["note_" + lang ] | eleventyNavigation | eleventyNavigationToHtml | safe }}
+```
 ## 5. Zdroje
 - [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/navigation/)

@@ -1,16 +1,16 @@
 ---
-title: Eleventy i18n plugin
+title: Eleventy i18n
 translationKey: "i18nPlugin"
 templateEngineOverride: md
 eleventyNavigation:
-  key: Eleventy i18n plugin
+  key: Eleventy i18n
   parent: Eleventy
-  order: 4
+  order: 3
 ---
-## 1. Installation & configuration
-Plugin is bundled with Eleventy and does not require separate installation. 
+## 1. Instalace
+Plugin je od v2.0.0. součástí Eleventy a neinstaluje se. 
 
-Configuration (`.eleventy.js`)
+## 2. Konfigurace
 ```js
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
@@ -22,8 +22,7 @@ module.exports = function(eleventyConfig) {
   });
 };
 ```
-## 2. Folder structure
-For each language used, there must be a separate directory in the `input` directory, named after the code of that language (code according to IETF BCP 47). 
+## 3. Adresářová struktura
 ```html
 ├──src                        
     ├── _data                 
@@ -48,24 +47,22 @@ For each language used, there must be a separate directory in the `input` direct
          ├── index.md      // index file for CS content
          └── cs.json       // default Front Matter Data for CS markdown files
 ```
-## 3. Front Matter Data
-For each language used, I created the following `json` (data in it will be automatically inherited by other files in the directory): 
-
-For English: `/en/en.json`: 
+## 4. Front Matter Data 
+Vytvoření souboru `/src/en/en.json`: 
 ```json
 {
   "lang": "en"
   }
 ```
 
-For Czech: `/cs/cs.json`:
+Vytvoření souboru `/src/cs/cs.json`:
 ```json
  {
   "lang": "cs"
   }
 ```
-## 4. Basic layout
-In the basic layout `base.njk`, I added a reference to `lang`:
+## 5. Základní layout
+Úprava základního layoutu `/src/_layouts/base.njk`:
 
 ```html
 <!DOCTYPE html>
@@ -73,8 +70,8 @@ In the basic layout `base.njk`, I added a reference to `lang`:
   <head>
     ...
 ```
-## 5. Netlify redirection
-I created a `netlify.toml` file in the root directory: 
+## 6. Přesměrování na Netlify
+Vytvoření souboru `/netlify.toml`: 
 
 ```html
 # Redirect for end-user’s browser preference override
@@ -90,10 +87,8 @@ I created a `netlify.toml` file in the root directory:
   to = "/cs/:splat"
   status = 302
 ```
-If the user's preferred language (or their browser's) is English, it will be used. Otherwise, Czech (default) will be used.
 
-## 6. Localized collections
-I created localized collections for each type of my content (`page`, `note`, `post`) by making modifications in the configuration (.eleventy.js). Here is an example for `page`:
+## 7. Lokalizované kolekce
 ```js
 // collection of pages in english
 module.exports = function (eleventyConfig) {
@@ -109,10 +104,9 @@ module.exports = function (eleventyConfig) {
   });
 };
 ```
-I then used the localized collections, for example, in [Horizontal navigation](/en/note/eleventy/horizontal-navigation) (step 3) or in [Blog Post Layout](/en/note/eleventy/blog-post-layout) (step 5).
 
-## 7. Dictionary
-For localizing partials, I created a `languages.js` file in the `_data` directory:
+## 8. Slovník
+Vytvoření souboru `/src/_data/languages.js`:
 ```js
 module.exports = {
   en: {
@@ -126,10 +120,9 @@ module.exports = {
   }
 };
 ```
-The file contains text translations for each language. An example of localizing partials is in [Blog Post Layout](/en/note/eleventy/blog-post-layout) (step 5). 
 
-## 8. Sources
-- [Official documentation](https://www.11ty.dev/docs/plugins/i18n/)
+## 9. Zdroje
+- [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/i18n/)
 - [Multilingual sites with Eleventy](https://www.webstoemp.com/blog/multilingual-sites-eleventy/)
 - [Internationalization with Eleventy 2.0 and Netlify](https://www.lenesaile.com/en/blog/internationalization-with-eleventy-20-and-netlify/)
 

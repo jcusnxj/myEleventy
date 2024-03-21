@@ -1,16 +1,16 @@
 ---
-title: Eleventy i18n plugin
+title: Eleventy i18n
 translationKey: "i18nPlugin"
 templateEngineOverride: md
 eleventyNavigation:
-  key: Eleventy i18n plugin
+  key: Eleventy i18n
   parent: Eleventy
-  order: 4
+  order: 3
 ---
-## 1. Instalace & konfigurace
-Plugin je od v2.0.0. součástí Eleventy a neinstaluje se. 
+## 1. Installation
+Plugin is bundled with Eleventy and does not require separate installation. 
 
-Konfigurace (`.eleventy.js`)
+## 2. Configuration
 ```js
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
@@ -22,8 +22,7 @@ module.exports = function(eleventyConfig) {
   });
 };
 ```
-## 2. Adresářová struktura
-Pro každý použitý jazyk musí v `root` adresáři existovat samostatný adresář pojménovaný podle kódu daného jazyka (kód dle IETF BCP 47). 
+## 3. Folder structure
 ```html
 ├──src                        
     ├── _data                 
@@ -35,37 +34,35 @@ Pro každý použitý jazyk musí v `root` adresáři existovat samostatný adre
     │    ├── css             
     │    ├── img             
     │    └── js              
-    ├── en                 // directory for EN content
+    ├── en                 // new directory for EN content (mandatory + code according to IETF BCP 47)
     │    ├── page          // custom folder for EN content
     │    ├── note          // custom folder for EN content
     │    ├── post          // custom folder for EN content
     │    ├── index.md      // index file for EN content
     │    └── en.json       // default Front Matter Data for EN markdown files
-    └── cs                 // new directory for your CS content
+    └── cs                 // new directory for EN content (mandatory + code according to IETF BCP 47)
          ├── page          // custom folder for CS content
          ├── note          // custom folder for CS content
          ├── post          // custom folder for CS content 
          ├── index.md      // index file for CS content
          └── cs.json       // default Front Matter Data for CS markdown files
 ```
-## 3. Front Matter Data
-Pro každý použitý jazyk jsem založil následující `json` (data v něm budou automaticky zděděna ostatními soubory v adresáři): 
-
-Pro angličtinu: `/en/en.json`: 
+## 4. Front Matter Data 
+Creation of file `/src/en/en.json`: 
 ```json
 {
   "lang": "en"
   }
 ```
 
-Pro češtinu: `/cs/cs.json`:
+Creation of file `/src/cs/cs.json`:
 ```json
  {
   "lang": "cs"
   }
 ```
-## 4. Základní layout
-V základním layout `base.njk` jsem přidal okaz na `lang`:
+## 5. Basic layout
+Modification of basic layout `/src/_layouts/base.njk`:
 
 ```html
 <!DOCTYPE html>
@@ -73,8 +70,8 @@ V základním layout `base.njk` jsem přidal okaz na `lang`:
   <head>
     ...
 ```
-## 5. Přesměrování na Netlify
-V `root` adresáři jsem vytvořil soubor `netlify.toml`: 
+## 6. Netlify redirection
+Creation of file `/netlify.toml`: 
 
 ```html
 # Redirect for end-user’s browser preference override
@@ -90,11 +87,8 @@ V `root` adresáři jsem vytvořil soubor `netlify.toml`:
   to = "/cs/:splat"
   status = 302
 ```
-Pokud je to preferovaný jazyk uživatele (resp. jeho prohlížeče) angličtina, použije se. Jinak se použije čeština (default).
 
-## 6. Lokalizované kolekce
-Vytvořil jsem lokalizované kolekce pro jednotlivé typy mého obsahu (`page`, `note`, `post`) úpravou v konfiguraci (`.eleventy.js`). Zde je příklad pro `page`:
-
+## 7. Localized collections
 ```js
 // collection of pages in english
 module.exports = function (eleventyConfig) {
@@ -110,10 +104,9 @@ module.exports = function (eleventyConfig) {
   });
 };
 ```
-Lokalizované kolekce jsem použil například v [Horizontální navigaci](/cs/note/eleventy/horizontalni-navigace) (bod 3) nebo v [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout) (bod 5).
 
-## 7. Slovník
-Pro lokalizaci partials jsem vytvořil soubor `languages.js` v adresáři `_data`:
+## 8. Dictionary
+Creation of file `/src/_data/languages.js`:
 ```js
 module.exports = {
   en: {
@@ -127,10 +120,9 @@ module.exports = {
   }
 };
 ```
-Soubor obsahuje překlad textu pro každý jazyk. Příklad lokalizace partials je v [Blog příspěvek - layout](/cs/note/eleventy/blog-prispevek-layout) (bod 5). 
 
-## 8. Zdroje
-- [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/i18n/)
+## 9. Sources
+- [Official documentation](https://www.11ty.dev/docs/plugins/i18n/)
 - [Multilingual sites with Eleventy](https://www.webstoemp.com/blog/multilingual-sites-eleventy/)
 - [Internationalization with Eleventy 2.0 and Netlify](https://www.lenesaile.com/en/blog/internationalization-with-eleventy-20-and-netlify/)
 

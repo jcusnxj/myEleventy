@@ -1,19 +1,18 @@
 ---
-title: Markdown-it Plugin
+title: Markdown-it
 templateEngineOverride: md
 translationKey: "markdownIt"
 eleventyNavigation:
-  key: Markdown-it Plugin
+  key: Markdown-it
   parent: Eleventy
   order: 6
 ---
-## 1. Installation & Configuration
-Installation 
+## 1. Instalace 
 ```hmtl
 npm install markdown-it
 ```
 
-Configuration
+## 2. Konfigurace
 ```js
 const markdownIt = require("markdown-it");
 
@@ -30,8 +29,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLibrary);
 ```
 
-## 2. Usage
-See official documentation.
+## 3. Použití
+Viz oficiální dokumentace.
 
-## 3. Sources
-- [Markdown-it documentation](https://github.com/markdown-it/markdown-it)
+## 4. Zdroje
+- [Markdown-it dokumentace](https://github.com/markdown-it/markdown-it)

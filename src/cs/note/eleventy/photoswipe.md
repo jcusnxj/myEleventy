@@ -12,12 +12,13 @@ eleventyNavigation:
 npm install photoswipe
 ```
 ## 2. PhotoSwipe CSS a JS soubory
-Následující soubory je potřeba zkopírovat z `node_modules/photoswipe/dist` do Eleventy projektu:
+Následující soubory je potřeba zkopírovat z `node_modules/photoswipe/dist` do Eleventy projektu `/src/assests/js/`:
 - photoswipe.css
 - photoswipe.esm.js
 - photoswipe-lightbox.esm.js
 
 ## 3. Vytvořit index.js s inicializací
+Vytvoření souboru `/src/assets/js/index.js`:
 ```js
 import PhotoSwipeLightbox from '/assets/js/photoswipe-lightbox.esm.js'; // adjust path to your own
 const lightbox = new PhotoSwipeLightbox({
@@ -29,7 +30,7 @@ lightbox.init();
 ```
 
 ## 4. Základní layout
-Upravit základní layout `base.njk`:
+Upravit základní layout `/src/_layouts/base.njk`:
 ```html
 <!DOCTYPE html>
 <html lang="cs">

@@ -7,19 +7,17 @@ eleventyNavigation:
   parent: Eleventy
   order: 16
 ---
-## 1. Markdown-it & Markdown-it-anchor plugin
-Markdown-it-anchor automaticky vytváří heading anchor links (tj. vloží IDs do nadpisů):
-
-Instalace (markdown-it)
+## 1. Instalace - Markdown-it & Markdown-it-anchor
+Markdown-it
 ```hmtl
 npm install markdown-it
 ```
-Instalace (markdown-it-anchor)
+Markdown-it-anchor
 ```hmtl
 npm install markdown-it-anchor
 ```
 
-Konfigurace (markdown-it & markdown-it-anchor)
+## 2. Konfigurace - Markdown-it & Markdown-it-anchor
 ```js
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -36,12 +34,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 };
 ```
-## 2. ToC plugin
-Instalace
+## 3. Instalace - ToC plugin
 ```html
 npm i --save eleventy-plugin-toc
 ```
-Konfigurace (`.eleventy.js`)
+## 4. Konfigurace - ToC plugin
 ```js
 const pluginTOC = require('eleventy-plugin-toc')
 
@@ -55,11 +52,11 @@ module.exports = function (eleventyConfig) {
     });
 };
 ```
-## 3. Použití
+## 5. Použití
 ```html
  {{ content | toc | safe }}
 ```
-## 4. Zdroje
+## 6. Zdroje
 - [ToC dokumentace](https://github.com/jdsteinbach/eleventy-plugin-toc)
 - [Markdown-it dokumentace](https://github.com/markdown-it/markdown-it)
 - [Markdown-it-anchor dokumentace](https://github.com/valeriangalliat/markdown-it-anchor)

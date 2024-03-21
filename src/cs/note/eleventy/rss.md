@@ -1,19 +1,18 @@
 ---
-title: RSS plugin
+title: RSS
 translationKey: "rssPlugin"
 templateEngineOverride: md
 eleventyNavigation:
-  key: RSS plugin
+  key: RSS
   parent: Eleventy
   order: 15
 ---
-## 1. Installation & configuration
-Installation
+## 1. Instalace
 ```html
 npm install @11ty/eleventy-plugin-rss --save-dev
 ```
 
-Configuration (`.eleventy.js`)
+## 2. Konfigurace 
 ```js
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
@@ -22,10 +21,9 @@ module.exports = function(eleventyConfig) {
 };
 ```
 
-## 2. feed.njk
-_The procedure assumes the existence of localized content. If the website does not use multiple languages, then it is sufficient to create a `feed.njk` file in the `root` directory according to the template in the official documentation for the RSS plugin._
+## 3. feed.njk
+Založení souborů `/src/en/feed.njk` a `/src/cs/feed.njk`:
 
-In the directories for each language, I created a `feed.njk` file:
 ```yaml
 ---
 layout: feed
@@ -34,9 +32,8 @@ eleventyExcludeFromCollections: true
 ---
 ```
 
-## 3. Global data
-I modified the `site.js` file (see step 2, [Language Switcher](/en/note/eleventy/language-switcher)) with metadata: 
-
+## 4. Globální data
+Úprava souboru `/src/_data/site.js`: 
 ```js
 module.exports = {
     title: "jcusnxj",
@@ -66,8 +63,9 @@ module.exports = {
   };
   ```
 
-## 4. Feed Layout
-In the `_layouts` directory, I created a file named `feed.njk`:
+## 5. Layout pro feed.njk
+Založení souboru `/src/_layouts/feed.njk`:
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}/{{ page.lang }}/">
@@ -95,6 +93,6 @@ In the `_layouts` directory, I created a file named `feed.njk`:
 </feed>
 ```
 
-## 5. Sources
-- [Official documentation](https://www.11ty.dev/docs/plugins/rss/)
+## 6. Zdroje
+- [Oficiální dokumentace](https://www.11ty.dev/docs/plugins/rss/)
 
