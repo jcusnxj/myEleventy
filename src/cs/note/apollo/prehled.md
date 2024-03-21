@@ -69,6 +69,36 @@ __Délka pobytu na Měsíci__
 <br>
 <br>
 
+<h2 id="2">Apollo 13</h2>
+
+<div class="double">
+<div class="left">
+
+![Apollo 13 insignia](/assets/img/apollo/Apollo_13_insignia.png)
+
+</div>
+<div class="right">
+
+__Vesmírná loď__ 
+CSM Odyssey a LM Aquarius
+
+__Posádka__ 
+James A. Lovell - velitel mise
+Fred W. Haise - pilot LM 
+John Leonard Swigert - pilot CSM
+
+__Datum__ 
+11.-17. dubna 1970
+__Délka mise__ 
+5 dní, 22 hodin, 54 minut
+__Místo přistání__ 
+Mise přerušena po výbuchu kyslíkové nádrže v servisním modulu.
+
+</div>
+</div>
+<br>
+<br>
+
 <h2>Apollo 14</h2>
 
 <div class="double">

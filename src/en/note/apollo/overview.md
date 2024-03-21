@@ -69,6 +69,36 @@ __Lunar surface stay time__
 <br>
 <br>
 
+<h2 id="2">Apollo 13</h2>
+
+<div class="double">
+<div class="left">
+
+![Apollo 13 insignia](/assets/img/apollo/Apollo_13_insignia.png)
+
+</div>
+<div class="right">
+
+__Spacecraft__ 
+CSM Odyssey a LM Aquarius
+
+__Crew__ 
+James A. Lovell - velitel mise
+Fred W. Haise - pilot LM 
+John Leonard Swigert - pilot CSM
+
+__Date__ 
+April 11 - 17, 1970
+__Mission duration__ 
+5 days, 22 hours, 54 minutes
+__Landing site__ 
+Mission aborted after rupture of service module oxygen tank. 
+
+</div>
+</div>
+<br>
+<br>
+
 <h2>Apollo 14</h2>
 
 <div class="double">
