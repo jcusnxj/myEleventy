@@ -165,10 +165,17 @@ footer {
     display: none;
   }
 
+  .content {
+    padding-left: 4.4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+  }
+
   .hamburger-menu {
     display: block; /* Show the hamburger icon */
     position: fixed;
-    top: 1rem; /* Adjust as needed */
+    font-size: 3rem;
+    top: 0; /* Adjust as needed */
     left: 1rem; /* Adjust as needed */
     z-index: 2;
   }
