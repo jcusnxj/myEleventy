@@ -139,6 +139,7 @@ footer {
 
 .menu-area {
   display: none; /* Initially hidden */
+  overflow-y: auto; /* Allows vertical scrolling */
 }
 
 
