@@ -125,6 +125,28 @@ footer {
   color: #7b7a7a;
 } 
 
+/* Styles to hide the sidebar on small screens and revert on larger screens */
+.sidebar {
+  display: block; /* default display */
+}
+
+/* Base styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  /* Additional styling as needed */
+}
+
+.menu-area {
+  display: none; /* Initially hidden */
+}
+
+
+/* Hide the actual checkbox */
+.menu-toggle {
+  display: none;
+}
+
 /* responsive layout */
 @media (max-width: 800px) {
   .container {
@@ -132,12 +154,41 @@ footer {
   }
   main {
     min-width: 100%;
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
   .double {
     flex-direction: column;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger icon */
+    position: fixed;
+    top: 1rem; /* Adjust as needed */
+    left: 1rem; /* Adjust as needed */
+    z-index: 2;
+  }
+  
+  /* Display the menu when the hidden checkbox is checked */
+  .menu-toggle:checked + .hamburger-menu + .menu-area {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #151322; /* Adjust color/transparency as needed */
+    z-index: 1;
+    padding-top: 4rem;
+    padding-left: 4rem;
+  }
+
 }
+
+
 
 /* SIDEBAR */
 /* CREDITS: https://www.mikeaparicio.com/posts/2022-08-19-nested-navigation-in-eleventy/ */

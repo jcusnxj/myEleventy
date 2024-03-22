@@ -10,6 +10,19 @@
     <title>{{ title }}</title> 
   </head>
   <body>
+     
+    <!-- Hidden checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Hamburger icon, acting as a label for the checkbox -->
+      <label for="menu-toggle" class="hamburger-menu">&#9776;</label>
+    <!-- The sidebar/menu content that will be shown or hidden -->
+      <div class="menu-area">
+        {% include "partials/_sidebar.njk" %}
+        <br>
+        {% include "partials/_language.njk" %}
+      </div>
+     
      <div class="container">
         <div class="sidebar">
           {% include "partials/_sidebar.njk" %}
