@@ -43,9 +43,10 @@ p {
   padding-top: 1rem;
 }
 
-img {
-  width: 100%;
-  max-width: 300px;
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
 a {
