@@ -131,11 +131,7 @@ footer {
 }
 
 /* Base styles */
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-  /* Additional styling as needed */
-}
+
 
 .menu-area {
   display: none; /* Initially hidden */
@@ -148,11 +144,51 @@ footer {
   display: none;
 }
 
+.navigation {
+  display: flex; /* Displays an element as a block-level flex container */
+  align-items: center; /* Aligns the flex items vertically */
+  height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
+  width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
+  background-color: #122464;
+  padding-right: 1rem;
+  padding-left: 2rem;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;  
+  justify-content: flex-end;
+}
+
+.navitem a {       /* CSS Selector - selects all <a> elements where the parent is a <nav> element */
+  display: block;     /* Displays an element as a block element. It starts on a new line, and takes up the whole width. */
+  color: #8F94A6;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+}
+
+.navitem a:hover {      
+  color: #FDFDFE;
+}
+
+.sitename {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sitename a {
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  
+}
+
 /* responsive layout */
 @media (max-width: 800px) {
-  .container {
-      flex-direction: column-reverse;
-  }
+  
   main {
     min-width: 100%;
     padding-left: 0rem;
@@ -165,18 +201,20 @@ footer {
     display: none;
   }
 
+  .sitename {
+    display: none;
+  }
+
   .content {
-    padding-left: 4.4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
+    padding: 1.5rem;
   }
 
   .hamburger-menu {
     display: block; /* Show the hamburger icon */
-    position: fixed;
+    margin-right: auto; /* Pushes everything else to the right */
+    /* position: fixed; */
     font-size: 3rem;
-    top: 0; /* Adjust as needed */
-    left: 1rem; /* Adjust as needed */
+    /* top: 0; */ 
     z-index: 2;
   }
   

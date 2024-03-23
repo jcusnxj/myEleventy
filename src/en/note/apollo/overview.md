@@ -26,7 +26,7 @@ Michael Collins - CSM pilot
 
 __Date__ 
 July 16-24, 1969
-__Duration__ 
+__Mission duration__ 
 8 days, 3 hours, 18 minutes
 __Landing site__ 
 Sea of Tranquility - [LROC map](https://bit.ly/3Tf8u8a)
@@ -57,7 +57,7 @@ Richard Francis Gordon - CSM pilot
 
 __Date__ 
 November 14-24, 1969
-__Duration__ 
+__Mission duration__ 
 10 days, 4 hours, 36 minutes
 __Landing site__ 
 Ocean of Storms - [LROC map](https://bit.ly/3v0GlZf) 
@@ -119,7 +119,7 @@ Stuart Allen Roosa - CSM pilot
 
 __Date__ 
 January 31 - February 9, 1971
-__Duration__ 
+__Mission duration__ 
 9 days, 0 hours, 2 minutes
 __Landing site__ 
 Fra Mauro - [LROC map](https://bit.ly/3wxU0Yh)
@@ -151,7 +151,7 @@ Alfred M. Worden - CSM pilot
 
 __Date__ 
 July 26 - August 7, 1971
-__Duration__ 
+__Mission duration__ 
 12 days, 17 hours, 12 minutes
 __Landing site__ 
 Hadley-Apennine - [LROC map](https://bit.ly/49EaeOb) 
@@ -183,7 +183,7 @@ Thomas K. Mattingly - CSM pilot
 
 __Date__ 
 April 16 - 27, 1972
-__Duration__ 
+__Mission duration__ 
 11 days, 1 hour, 51 minutes
 __Landing site__ 
 Descartes Highlands - [LROC map](https://bit.ly/3P1yWjj)
@@ -215,7 +215,7 @@ Ronald Ellwin Evans - CSM pilot
 
 __Date__ 
 December 7 - 19, 1972
-__Duration__ 
+__Mission duration__ 
 12 days, 13 hours, 52 minutes
 __Landing site__ 
 Taurus-Littrow - [LROC map](https://bit.ly/3TeqC25)
