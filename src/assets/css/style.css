@@ -26,7 +26,7 @@ vw - Relative to 1% of the width of the viewport = the browser window size.
 
 main {
   margin: 0 auto; /* Creates extra space around an element. Shorthand for margin-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all*/
-  min-height: calc(100vh - 9rem); /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
+  min-height: calc(100vh - 11rem); /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
   max-width: 100rem; 
 }
 
@@ -80,15 +80,13 @@ footer {
 .container {
   display: flex;
   flex-direction: row;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .sidebar {
   min-width: 250px;
   background-color: #151322;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 3rem; 
+  padding-top: 3rem;
 }
 
 .content {
@@ -96,6 +94,7 @@ footer {
   overflow: hidden;
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 2rem;
 }
 
 /* two column layout used for some notes with images */
@@ -128,6 +127,13 @@ footer {
 /* Styles to hide the sidebar on small screens and revert on larger screens */
 .sidebar {
   display: block; /* default display */
+  
+}
+
+.stickymenu {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 7.5rem; 
 }
 
 /* Base styles */
@@ -149,7 +155,7 @@ footer {
   align-items: center; /* Aligns the flex items vertically */
   height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
   width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
-  background-color: #122464;
+  background-color: #050e2f;
   padding-right: 1rem;
   padding-left: 2rem;
   position: -webkit-sticky; /* For Safari */
@@ -228,10 +234,10 @@ footer {
     left: 0;
     background-color: #151322; /* Adjust color/transparency as needed */
     z-index: 1;
-    padding-top: 4rem;
-    padding-left: 4rem;
+    padding-top: 6rem;
+    padding-left: 6rem;
   }
-
+ 
 }
 
 
