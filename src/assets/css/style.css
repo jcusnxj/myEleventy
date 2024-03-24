@@ -299,6 +299,6 @@ footer {
 }
 
 .nav-list details > [role="list"] {
-  padding-inline-start: 1.3rem;            /* adding some padding to indent the text for lists inside of a details element */
+  padding-inline-start: 2rem;            /* adding some padding to indent the text for lists inside of a details element */
 }
 
