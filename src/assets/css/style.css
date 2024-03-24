@@ -125,6 +125,20 @@ footer {
   color: #7b7a7a;
 } 
 
+/* Photo gallery */
+.photoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 0;
+}
+
+.photoContainer img {
+  padding-left: 1rem;
+  padding-top: 0rem;
+}
+
 /* Styles to hide the sidebar on small screens and revert on larger screens */
 .sidebar {
   display: block; /* default display */
