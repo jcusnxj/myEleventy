@@ -1,20 +1,20 @@
 ---
-title: Pictures
-translationKey: "apollo11Pictures"
+title: Apollo 11
+translationKey: "apollo11Photos"
 eleventyNavigation:
-  key: Pictures
-  parent: Apollo 11
-  order: 1
+  key: Apollo 11 
+  parent: Apollo
+  order: 3
 ---
 
 <div class="pswp-gallery" id="my-gallery">
   <div class="photoContainer">
 
-  <a href="/assets/img/apollo/apollo-11/large/S69-HC-619.jpg" 
+  <a href="/assets/img/apollo/apollo-11/large/69-HC-619.jpg" 
     data-pswp-width="2000" 
     data-pswp-height="1971" 
     target="_blank">
-    <img src="/assets/img/apollo/apollo-11/thumbnails/S69-HC-619.jpg" alt="" />
+    <img src="/assets/img/apollo/apollo-11/thumbnails/69-HC-619.jpg" alt="" />
   </a>
 
   <a href="/assets/img/apollo/apollo-11/large/S69-38660.jpg" 
