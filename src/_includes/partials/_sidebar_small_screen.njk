@@ -2,20 +2,18 @@
 
 {% macro renderNavListItem(entry) %}
   {% if entry.children.length %}
-    <li>
-      <details
+    <li
         {%- for child in entry.children %}
           {% if child.parent == entry.title and child.url == page.url %}
             class="is-active"
-            open
           {% endif %}
         {% endfor %}
       >
-        <summary>{{ entry.title }}</summary>
+        <input type="checkbox" id={{ entry.title }}>
+        <label for={{ entry.title }}>{{ entry.title }}</label>
         <ul role="list">
           {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
         </ul>
-      </details>
     </li>
   {% else %}
     <li>
@@ -24,6 +22,6 @@
   {%- endif -%}
 {%- endmacro %}
 
-<ul class="nav-list" role="list">
+<ul class="sidebarnav" role="list">
 {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
 </ul>

@@ -142,7 +142,6 @@ footer {
 /* Styles to hide the sidebar on small screens and revert on larger screens */
 .sidebar {
   display: block; /* default display */
-  
 }
 
 .stickymenu {
@@ -258,47 +257,60 @@ footer {
 
 
 /* SIDEBAR */
-/* CREDITS: https://www.mikeaparicio.com/posts/2022-08-19-nested-navigation-in-eleventy/ */
-:where([role="list"]) {
-  list-style: none;
-  padding-inline-start: 0;
-}
+ .sidebarnav label {
+  /* ensure lable is "clickable" instead of the hidden input */
+    display: block;
+    cursor: pointer;
+  }
 
-.nav-list {
-  background-color: #151322;
-  color: #8F94A6;
-  user-select: none;
-}
+.sidebarnav input[type="checkbox"] {
+    display: none;
+  }
 
-.nav-list a {
-  color: inherit;
-  text-decoration: none;
-  display: block;             /* the link takes up the full width of the list, giving it a larger clickable surface */
-}
+.sidebarnav input[type="checkbox"] ~ ul{
+    height: 0;
+    transform: scaleY(0);
+  }
 
-.nav-list summary {
-  cursor: pointer;
-  display: block;            /* removes native arrow on the left for <detail> in all browsers except for safari */
-}
+.sidebarnav input[type="checkbox"]:checked ~ ul{
+    height: 100%;
+    transform-origin: top;
+    transition: transform 0s ease-out;
+    transform: scaleY(1); 
+    
+  }
 
-.nav-list summary::-webkit-details-marker {
-  display: none;             /* removes native arrow on the left for <detail> in safari */
-}
+  :where([role="list"]) {
+    list-style: none;
+    padding-inline-start: 0;
+  }
 
-.nav-list a,
-.nav-list summary {             
-  padding-block: 0.35rem;                   /* link and summary elements get some vertical padding */
-  transition: color .1s ease-in-out;        /* link and summary elements get - subtle transition on the color when it changes on hover */
-}
-
-.nav-list a:hover,
-.nav-list a[aria-current="page"],
-.nav-list summary:hover,
-.nav-list .is-active summary {
-  color: #FDFDFE;                         /* increasing the contrast on a link or summary if it's hovered over or if it's the current page */
-}
-
-.nav-list details > [role="list"] {
-  padding-inline-start: 2rem;            /* adding some padding to indent the text for lists inside of a details element */
-}
+  .sidebarnav {
+    background-color: #151322;
+    color: #8F94A6;
+    user-select: none;
+  }
+  
+  .sidebarnav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;             /* the link takes up the full width of the list, giving it a larger clickable surface */
+  }
+  
+  .sidebarnav a,
+  .sidebarnav label {             
+    padding-block: 0.35rem;                   /* link and summary elements get some vertical padding */
+    transition: color .1s ease-in-out;        /* link and summary elements get - subtle transition on the color when it changes on hover */
+  }
+  
+  .sidebarnav a:hover,
+  .sidebarnav a[aria-current="page"],
+  .sidebarnav label:hover,
+  .sidebarnav .is-active label {
+    color: #FDFDFE;                         /* increasing the contrast on a link or summary if it's hovered over or if it's the current page */
+  }
+  
+  .sidebarnav li > [role="list"] {
+    padding-inline-start: 2rem;            /* adding some padding to indent the text for lists inside of a details element */
+  }
 

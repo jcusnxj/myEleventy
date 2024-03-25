@@ -22,14 +22,14 @@
       
       <!-- The sidebar/menu content that will be shown or hidden -->
       <div class="menu-area">
-      {% include "partials/_sidebar.njk" %}
+      {% include "partials/_sidebar_small_screen.njk" %}
       </div>
       {% include "partials/_language.njk" %}
       </div>
      
      <div class="container">
         <div class="sidebar">
-          <div class="stickymenu">{% include "partials/_sidebar.njk" %}</div>
+          <div class="stickymenu">{% include "partials/_sidebar_large_screen.njk" %}</div>
         </div>
         <div class="content">
           <main>
@@ -43,5 +43,6 @@
      </div>
           {% include "partials/_footer.njk" %}
     <script type="module" src="/assets/js/index.js"></script>
+    <script type="module" src="/assets/js/active-submenu.js"></script>
   </body>
 </html>

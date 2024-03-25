@@ -3,7 +3,7 @@ title: Apollo 11
 translationKey: "apollo11Photos"
 eleventyNavigation:
   key: Apollo 11 
-  parent: Apollo
+  parent: Photos
   order: 3
 ---
 
