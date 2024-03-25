@@ -1,8 +1,8 @@
 ---
-title: Plán mise
+title: Flight Plan
 translationKey: "missionPlan"
 eleventyNavigation:
-  key: Plán mise
+  key: Flight Plan
   parent: Apollo
   order: 2
 ---
