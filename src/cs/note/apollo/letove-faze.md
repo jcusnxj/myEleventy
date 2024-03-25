@@ -1,8 +1,8 @@
 ---
-title: Letový plán (příklad pro Apollo 11)
+title: Letové fáze
 translationKey: "missionPlan"
 eleventyNavigation:
-  key: Letový plán
+  key: Letové fáze
   parent: Apollo
   order: 2
 ---

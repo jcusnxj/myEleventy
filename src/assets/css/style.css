@@ -14,8 +14,8 @@ html {
 body {
   font-size: 1.7rem;
   line-height: 1.5;
-  font-family: "Iowan Old Style", Garamond, Georgia, serif;
-  background-color: #151322;
+  font-family: system-ui, Helvetica, "Open Sans", "Helvetica Neue", Arial, "Segoe UI", sans-serif;;
+  background-color: #14191f;
   color: whitesmoke;
 }
 
@@ -35,12 +35,8 @@ main > ul {
   padding-top: 1rem;
 }
 
-main > h2, h3, h4, h5, h6 {
-  padding-top: 1rem;
-}
-
-p {
-  padding-top: 1rem;
+main >  h2, h3, h4, h5, h6 {
+  padding-top: 3rem;
 }
 
 img,
@@ -50,8 +46,13 @@ picture {
 }
 
 a {
-  color: #6A89FE;
+  color: #5fb8fc;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; 
+  text-decoration-color: #5fb8fc;  
 }
 
 /* FOOTER */
@@ -61,10 +62,9 @@ footer {
   align-items: center; /* Aligns the flex items vertically */
   height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
   width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
-  background-color: #151322;
   padding-right: 1rem;
   padding-left: 1rem;
-  color: #8F94A6;
+  color: grey;
 }
 
 .pagination {
@@ -85,7 +85,6 @@ footer {
 
 .sidebar {
   min-width: 250px;
-  background-color: #151322;
   padding-left: 3rem; 
   padding-top: 3rem;
 }
@@ -95,7 +94,6 @@ footer {
   overflow: hidden;
   padding-left: 4rem;
   padding-right: 4rem;
-  padding-top: 2rem;
 }
 
 /* two column layout used for some notes with images */
@@ -118,11 +116,11 @@ footer {
 }
 
 .right strong {
-  color: #7b7a7a;
+  color: grey;
 } 
 
 .left strong {
-  color: #7b7a7a;
+  color: grey;
 } 
 
 /* Photo gallery */
@@ -136,7 +134,7 @@ footer {
 
 .photoContainer img {
   padding-left: 1rem;
-  padding-top: 0rem;
+  padding-top: 1rem;
 }
 
 /* Styles to hide the sidebar on small screens and revert on larger screens */
@@ -169,7 +167,6 @@ footer {
   align-items: center; /* Aligns the flex items vertically */
   height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
   width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
-  background-color: #050e2f;
   padding-right: 1rem;
   padding-left: 2rem;
   position: -webkit-sticky; /* For Safari */
@@ -180,14 +177,15 @@ footer {
 
 .navitem a {       /* CSS Selector - selects all <a> elements where the parent is a <nav> element */
   display: block;     /* Displays an element as a block element. It starts on a new line, and takes up the whole width. */
-  color: #8F94A6;
+  color: #5fb8fc;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1rem 1rem;
 }
 
 .navitem a:hover {      
-  color: #FDFDFE;
+  text-decoration: underline; 
+  text-decoration-color: #5fb8fc;  
 }
 
 .sitename {
@@ -200,10 +198,13 @@ footer {
   color: white;
 }
 
+.sitename a:hover {
+  color: #5fb8fc;
+}
+
 .hamburger-menu {
   display: none;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 
 /* responsive layout */
@@ -237,6 +238,10 @@ footer {
     /* top: 0; */ 
     z-index: 2;
   }
+
+  .hamburger-menu:hover {
+    color: #5fb8fc;
+  }
   
   /* Display the menu when the hidden checkbox is checked */
   .menu-toggle:checked + .hamburger-menu + .menu-area {
@@ -246,10 +251,10 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #151322; /* Adjust color/transparency as needed */
     z-index: 1;
     padding-top: 6rem;
     padding-left: 6rem;
+    background-color: #14191f;
   }
  
 }
@@ -259,6 +264,7 @@ footer {
   /* ensure lable is "clickable" instead of the hidden input */
     display: block;
     cursor: pointer;
+    color: #5fb8fc;
   }
 
 .sidebarnav input[type="checkbox"] {
@@ -284,13 +290,11 @@ footer {
   }
 
   .sidebarnav {
-    background-color: #151322;
-    color: #8F94A6;
+
     user-select: none;
   }
   
   .sidebarnav a {
-    color: inherit;
     text-decoration: none;
     display: block;             /* the link takes up the full width of the list, giving it a larger clickable surface */
   }
@@ -305,7 +309,8 @@ footer {
   .sidebarnav a[aria-current="page"],
   .sidebarnav label:hover
   /* .sidebarnav .is-active label */ {
-    color: #FDFDFE;                         /* increasing the contrast on a link or summary if it's hovered over or if it's the current page */
+    text-decoration: underline; 
+    text-decoration-color: #5fb8fc;                        /* increasing the contrast on a link or summary if it's hovered over or if it's the current page */
   }
   
   .sidebarnav li > [role="list"] {
