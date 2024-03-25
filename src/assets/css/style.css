@@ -305,8 +305,8 @@ footer {
   
   .sidebarnav a:hover,
   .sidebarnav a[aria-current="page"],
-  .sidebarnav label:hover,
-  .sidebarnav .is-active label {
+  .sidebarnav label:hover
+  /* .sidebarnav .is-active label */ {
     color: #FDFDFE;                         /* increasing the contrast on a link or summary if it's hovered over or if it's the current page */
   }
   
