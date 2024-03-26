@@ -6,8 +6,6 @@ eleventyNavigation:
   parent: Apollo
   order: 2
 ---
-___Note:___ _In terms of flight phases, the individual Apollo missions did not differ significantly from one another. Unless otherwise stated, the time durations mentioned in the article below correspond to the time durations from the Apollo 11 mission._
-
 ## Launch and Earth Orbit
 The mission begins with the launch of the Saturn V rocket from Kennedy Space Center, and the first phase involves reaching a parking orbit around Earth at an altitude of about 185 kilometers. During the flight, the first (S-IC) and then the second (S-II) rocket stages are detached. After steering the third stage (S-IVB) into the parking orbit, its engine is shut down. This entire process takes about 12 minutes. In the following 1 hour and 20 minutes, the spacecraft orbits around Earth. During this, systems are checked and the spacecraft is oriented for the correct trajectory to the Moon (as a preparation for TLI - Trans Lunar Injection). 
 

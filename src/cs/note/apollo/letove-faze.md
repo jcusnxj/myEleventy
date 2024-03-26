@@ -6,8 +6,6 @@ eleventyNavigation:
   parent: Apollo
   order: 2
 ---
-___Poznámka:___ _Ve smyslu letových fází se od sebe jednotlivé mise Apollo příliš nelišily. Pokud není uvedeno jinak, doby trvání uváděné v článku níže odpovídají dobám z mise Apollo 11._
-
 ## Start a oběh Země 
 Mise začíná startem rakety Saturn V z Kennedyho vesmírného střediska a první fáze zahrnuje dosažení parkovací orbitální dráhy okolo Země ve výšce zhruba 185 kilometrů. V průběhu letu dochází k odpojení nejprve prvního (S-IC) a posléze i druhého (S-II) raketového stupně. Po navedení třetího stupně (S-IVB) na parkovací orbitální dráhu dojde k vypnutí jeho motoru. Celý tento proces trvá zhruba 12 minut. V následující 1 hodině a 20 minutách loď obíhá kolem Země. Při tom se kontrolují systémy a loď je orientována za účelem správného navedení na kurz k Měsíci (tzv. TLI - Trans Lunar Injection). 
 

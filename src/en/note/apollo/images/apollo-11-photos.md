@@ -4,7 +4,7 @@ translationKey: "apollo11Photos"
 eleventyNavigation:
   key: Apollo 11 
   parent: Photos
-  order: 3
+  order: 4
 ---
 
 <div class="pswp-gallery" id="my-gallery">
