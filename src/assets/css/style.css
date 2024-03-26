@@ -167,8 +167,9 @@ footer {
   align-items: center; /* Aligns the flex items vertically */
   height: 4.5rem; /* Sets the height of an element. Does not include padding, borders, or margins. */
   width: 100%; /* Sets the width of an element. Does not include padding, borders, or margins. */
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-left: 2rem;
+  background-color: #14191f;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;  
@@ -227,7 +228,7 @@ footer {
   }
 
   .content {
-    padding: 1.5rem;
+    padding: 2rem;
   }
 
   .hamburger-menu {
