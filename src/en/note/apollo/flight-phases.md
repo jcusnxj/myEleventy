@@ -15,10 +15,10 @@ eleventyNavigation:
     <img src="/assets/img/apollo/thumbnails/mission_plan_thumbnail.jpg" alt="" />
 </a>
 </div>
-<div class="pswp-gallery" id="my-gallery">
-<br>
 
 ## Launch and Earth Orbit
+<br>
+<div class="pswp-gallery" id="my-gallery">
 The mission begins with the launch of the <a href="/assets/img/apollo/large/saturn_large.jpg" data-pswp-width="1448" data-pswp-height="2048" target="_blank">Saturn V</a> rocket from Kennedy Space Center, and the first phase involves reaching a parking orbit around Earth at an altitude of about 185 kilometers. During the flight, the first (S-IC) and then the second (S-II) rocket stages are detached. After steering the third stage (S-IVB) into the parking orbit, its engine is shut down. This entire process takes about 12 minutes. In the following 1 hour and 20 minutes, the spacecraft orbits around Earth. During this, systems are checked and the spacecraft is oriented for the correct trajectory to the Moon (as a preparation for TLI - Trans Lunar Injection). 
 </div>
 

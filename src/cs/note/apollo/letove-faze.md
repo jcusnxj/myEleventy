@@ -15,10 +15,10 @@ eleventyNavigation:
     <img src="/assets/img/apollo/thumbnails/mission_plan_thumbnail.jpg" alt="" />
 </a>
 </div>
-<div class="pswp-gallery" id="my-gallery">
-<br>
 
 ## Start a oběh Země 
+<br>
+<div class="pswp-gallery" id="my-gallery">
 Mise začíná startem rakety <a href="/assets/img/apollo/large/saturn_large.jpg" data-pswp-width="1448" data-pswp-height="2048" target="_blank">Saturn V</a> z Kennedyho vesmírného střediska a první fáze zahrnuje dosažení parkovací orbitální dráhy okolo Země ve výšce zhruba 185 kilometrů. V průběhu letu dochází k odpojení nejprve prvního (S-IC) a posléze i druhého (S-II) raketového stupně. Po navedení třetího stupně (S-IVB) na parkovací orbitální dráhu dojde k vypnutí jeho motoru. Celý tento proces trvá zhruba 12 minut. V následující 1 hodině a 20 minutách loď obíhá kolem Země. Při tom se kontrolují systémy a loď je orientována za účelem správného navedení na kurz k Měsíci (tzv. TLI - Trans Lunar Injection). 
 </div>
 
