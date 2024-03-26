@@ -2,6 +2,7 @@ const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig){
 
@@ -9,6 +10,12 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/css");
     eleventyConfig.addPassthroughCopy("src/assets/img");
     eleventyConfig.addPassthroughCopy("src/assets/js");
+
+    //filters
+    // postDate filter
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+      return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    });
 
     //shortcodes
     // get the current year

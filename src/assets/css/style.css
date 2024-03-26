@@ -31,7 +31,7 @@ main {
 }
 
 main > ul {
-  padding-left: 3rem;
+  padding-left: 2rem;
   padding-top: 1rem;
 }
 
@@ -41,6 +41,10 @@ main >  h2, h3, h4, h5 {
 
 h6 {
   font-size: 1.6rem;
+}
+
+p {
+  padding-top: 2rem;
 }
 
 img,
@@ -77,8 +81,10 @@ footer {
   padding: 1rem 0;
 } 
 
+.blog-list,
 .blog-list p {
-  padding-top: 0rem;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* 2 column layout */
@@ -139,6 +145,10 @@ footer {
 .photoContainer img {
   padding-left: 1rem;
   padding-top: 1rem;
+}
+
+.photoContainer p {
+  padding: 0;
 }
 
 /* Styles to hide the sidebar on small screens and revert on larger screens */
