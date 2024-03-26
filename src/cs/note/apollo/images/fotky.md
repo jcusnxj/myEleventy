@@ -1,5 +1,5 @@
 ---
-title: Fotky
+title: Fotky 
 permalink: false
 translationKey: "apolloPictures"
 eleventyNavigation:

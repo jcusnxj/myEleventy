@@ -35,8 +35,12 @@ main > ul {
   padding-top: 1rem;
 }
 
-main >  h2, h3, h4, h5, h6 {
+main >  h2, h3, h4, h5 {
   padding-top: 3rem;
+}
+
+h6 {
+  font-size: 1.5rem;
 }
 
 img,
@@ -180,7 +184,6 @@ footer {
   display: block;     /* Displays an element as a block element. It starts on a new line, and takes up the whole width. */
   color: #5fb8fc;
   text-decoration: none;
-  font-size: 1.8rem;
   padding: 1rem 1rem;
 }
 

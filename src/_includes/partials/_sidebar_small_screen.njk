@@ -2,7 +2,7 @@
 
 {% macro renderNavListItem(entry) %}
   {% if entry.children.length %}
-    <li
+    <h6><li
         {%- for child in entry.children %}
           {% if child.parent == entry.title and child.url == page.url %}
             class="is-active"
@@ -14,11 +14,11 @@
         <ul role="list">
           {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
         </ul>
-    </li>
+    </li></h6>
   {% else %}
-    <li>
+    <h6><li>
       <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a>
-    </li>
+    </li></h6>
   {%- endif -%}
 {%- endmacro %}
 
