@@ -1,8 +1,8 @@
 ---
-title: Flight Phases
+title: Missions' Phases
 translationKey: "missionPlan"
 eleventyNavigation:
-  key: Flight Phases
+  key: Phases
   parent: Apollo
   order: 2
 ---
@@ -15,6 +15,7 @@ eleventyNavigation:
     <img src="/assets/img/apollo/thumbnails/mission_plan_thumbnail.jpg" alt="" />
 </a>
 </div>
+<i>Credit: <a href="https://science.nasa.gov/resource/apollo-mission-flight-plan-1967/">NASA</a></i>
 
 ## Launch and Earth Orbit
 <br>

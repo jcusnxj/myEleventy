@@ -1,5 +1,5 @@
 ---
-title: Přehled
+title: Přehled misí
 translationKey: "apolloOverview"
 eleventyNavigation:
   key: Přehled
@@ -227,6 +227,3 @@ __Délka pobytu na Měsíci__
 <br>
 <br>
 
-## Zdroje
-- [Apollo Lunar Surface Journal](https://www.nasa.gov/history/alsj/main.html)
-- [Apollo Flight Journal](https://www.nasa.gov/history/afj/)

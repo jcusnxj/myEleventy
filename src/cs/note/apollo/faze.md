@@ -1,8 +1,8 @@
 ---
-title: Letové fáze
+title: Fáze misí
 translationKey: "missionPlan"
 eleventyNavigation:
-  key: Letové fáze
+  key: Fáze
   parent: Apollo
   order: 2
 ---
@@ -15,6 +15,7 @@ eleventyNavigation:
     <img src="/assets/img/apollo/thumbnails/mission_plan_thumbnail.jpg" alt="" />
 </a>
 </div>
+<i>Credit: <a href="https://science.nasa.gov/resource/apollo-mission-flight-plan-1967/">NASA</a></i>
 
 ## Start a oběh Země 
 <br>

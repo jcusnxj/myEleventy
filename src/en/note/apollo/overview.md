@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Missions' Overview
 translationKey: "apolloOverview"
 eleventyNavigation:
   key: Overview
@@ -226,7 +226,3 @@ __Lunar surface stay time__
 </div>
 <br>
 <br>
-
-## Sources
-- [Apollo Lunar Surface Journal](https://www.nasa.gov/history/alsj/main.html)
-- [Apollo Flight Journal](https://www.nasa.gov/history/afj/)
