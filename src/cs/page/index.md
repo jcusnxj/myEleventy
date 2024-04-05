@@ -9,4 +9,9 @@ eleventyNavigation:
 ---
 Pokud jde o tu doménu, bál jsem se, že sem polezou lidi.
 
-A stejně jste sem vlezli. Vaše škoda. 
+Poznámkovník. Něco na způsob [digitální zahrady](https://maggieappleton.com/garden-history).
+
+Generováno pomocí [11ty](https://www.11ty.dev) a hostováno u [Netlify](https://www.netlify.com).
+
+
+

@@ -9,4 +9,8 @@ eleventyNavigation:
 ---
 As for that domain, I was worried it would attract people.
 
-And still, you've ended up here. Your loss.
+Notebook. Something in the way of a [digital garden](https://maggieappleton.com/garden-history).
+
+Generated with [11ty](https://www.11ty.dev) and hosted on [Netlify](https://www.netlify.com).
+
+
