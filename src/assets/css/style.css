@@ -28,6 +28,7 @@ main {
   margin: 0 auto; /* Creates extra space around an element. Shorthand for margin-top/right/bottom/left. 4 top/right/botom/left, 3 - top/right/botom, 2 - vertical/horizontal 1 - all*/
   min-height: calc(100vh - 11rem); /* Sets the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. */
   max-width: 100rem; 
+  padding-left: 0.5rem;
 }
 
 main > ul {
