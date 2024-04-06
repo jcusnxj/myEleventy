@@ -1,9 +1,8 @@
 ---
 title: Log
-translationKey: "runningLog"
+translationKey: "webLog"
 eleventyNavigation:
   key: Log
-  parent: Běh
   order: 7
 ---
 <div class="blog-list">
