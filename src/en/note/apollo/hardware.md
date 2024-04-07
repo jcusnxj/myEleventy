@@ -28,3 +28,25 @@ A three-stage launch vehicle used in the Apollo and Skylab programs. Designed an
 <br><strong>Weight</strong> 2 950 500 kg
 </div>
 </div>
+
+<h2>CSM</h2>
+<div class="double">
+<div class="left">
+
+<div class="pswp-gallery" id="my-gallery">
+<a href="/assets/img/apollo/large/csm_large.jpg" 
+    data-pswp-width="1240" 
+    data-pswp-height="1754" 
+    target="_blank">
+    <img src="/assets/img/apollo/thumbnails/csm_thumbnail.jpg" alt="" />
+</a>
+</div>
+
+</div>
+<div class="right">
+<br><strong>Description</strong><br>
+tbd...<br>
+<br><strong>Length</strong> 11 m
+<br><strong>Diameter</strong> 3.9 m
+</div>
+</div>
