@@ -7,9 +7,9 @@ eleventyNavigation:
     key: Home
     order: 1
 ---
-As for that domain, I was worried it would attract people.
+Welcome!
 
-Notebook. Something in the way of a [digital garden](https://maggieappleton.com/garden-history).
+Personal notes on things that interest me. Something in the way of a [digital garden](https://maggieappleton.com/garden-history).
 
 Generated with [11ty](https://www.11ty.dev) and hosted on [Netlify](https://www.netlify.com).
 

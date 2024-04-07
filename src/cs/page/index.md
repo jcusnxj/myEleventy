@@ -7,9 +7,9 @@ eleventyNavigation:
     key: Domů
     order: 1
 ---
-Pokud jde o tu doménu, bál jsem se, že sem polezou lidi.
+Vítám Vás!
 
-Poznámkovník. Něco na způsob [digitální zahrady](https://maggieappleton.com/garden-history).
+Osobní poznámky k věcem, co mě zajímají. Něco na způsob [digitální zahrady](https://maggieappleton.com/garden-history).
 
 Generováno pomocí [11ty](https://www.11ty.dev) a hostováno u [Netlify](https://www.netlify.com).
 
