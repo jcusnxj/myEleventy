@@ -82,12 +82,6 @@ footer {
   padding: 1rem 0;
 } 
 
-.blog-list,
-.blog-list p {
-  list-style-type: none;
-  padding: 0;
-}
-
 /* 2 column layout */
 .container {
   display: flex;

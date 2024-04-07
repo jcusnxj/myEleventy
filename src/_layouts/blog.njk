@@ -1,9 +1,0 @@
-{% extends "src/_layouts/base.njk" %} 
-{% block content %}
-{{ date | postDate }}
-{{content| safe}}
-<br>
-<hr>
-{% include "partials/_pagination.njk" %}
-<hr>
-{% endblock %}

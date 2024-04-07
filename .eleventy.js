@@ -38,14 +38,6 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addCollection("note_cs", function (collection) {
       return collection.getFilteredByGlob("src/cs/note/**/*.md");
     });
-    // collection of posts in english
-    eleventyConfig.addCollection("post_en", function (collection) {
-      return collection.getFilteredByGlob("src/en/post/**/*.md");
-    });
-    // collection of posts in czech
-    eleventyConfig.addCollection("post_cs", function (collection) {
-      return collection.getFilteredByGlob("src/cs/post/**/*.md");
-    });
     // collection of all content in english
     eleventyConfig.addCollection("all_en", function (collection) {
       return collection.getFilteredByGlob("src/en/**/*.md");

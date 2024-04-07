@@ -1,7 +1,0 @@
-{% set previousPost = collections["post_" + lang ] | getPreviousCollectionItem(page) %}
-{% set nextPost = collections["post_" + lang ] | getNextCollectionItem(page) %}
-
-<div class="pagination">
-{% if previousPost %}<h6><a href="{{ previousPost.url }}">{{ languages[page.lang].previousPostText }}</a></h6>{% endif %}
-{% if nextPost %}<h6><a href="{{ nextPost.url }}">{{ languages[page.lang].nextPostText }}</a></h6>{% endif %}
-</div>
